@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-555 (555.42.02-0pikaprep1) noble; urgency=medium
+
+  * PikaOS Upstream package generation without waiting for upstream.
+
+ -- Renaud Lepage <root@cybik.moe>  Wed, 22 May 2024 10:23:30 -0700
+
 nvidia-graphics-drivers-550 (550.67-0ubuntu3) noble; urgency=medium
 
   * Limit supported pci-id's to the new ones supported by this release.

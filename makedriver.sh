@@ -26,3 +26,8 @@ apt-get build-dep ./ -y
 dpkg-buildpackage --no-sign -b -a "${DEBIAN_ARCH}"
 
 popd
+
+# Move the debs to output
+cd ../
+mkdir -p ./output
+mv ./*.deb ./output/

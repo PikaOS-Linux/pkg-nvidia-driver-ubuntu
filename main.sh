@@ -8,5 +8,3 @@ chmod +x ./makedriver.sh && ./makedriver.sh "$1"
 cd ../
 mkdir -p ./output
 mv ./*.deb ./output/
-sudo apt install -y tree
-tree

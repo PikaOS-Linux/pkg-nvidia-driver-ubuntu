@@ -26,9 +26,7 @@ apt-get build-dep ./ -y
 dpkg-buildpackage --no-sign -b
 
 sudo apt install -y tree
-ls
+ls amd64/
 
 popd
-
-ls
 exit 9

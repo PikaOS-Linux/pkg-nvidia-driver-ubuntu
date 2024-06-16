@@ -25,6 +25,10 @@ apt-get build-dep ./ -y
 # Build package
 dpkg-buildpackage --no-sign -b -a "${DEBIAN_ARCH}"
 
+sudo apt install -y tree
+tree
+exit 9
+
 popd
 
 # Move the debs to output

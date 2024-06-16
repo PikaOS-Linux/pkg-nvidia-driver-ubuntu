@@ -37,6 +37,7 @@ Depends:
  nvidia-dkms-555 (= ${binary:Version}),
  nvidia-kernel-common-555 (<= 555.52.04-1),
  nvidia-kernel-common-555 (>= 555.52.04),
+ nvidia-kernel-common-555 (= ${binary:Version}),
  nvidia-kernel-source-555 (= ${binary:Version}),
  libnvidia-compute-555 (= ${binary:Version}),
  libnvidia-extra-555 (= ${binary:Version}),

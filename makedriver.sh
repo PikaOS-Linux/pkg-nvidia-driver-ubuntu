@@ -23,7 +23,7 @@ popd || exit 2
 apt-get build-dep ./ -y
 
 # Build package
-dpkg-buildpackage --no-sign -b -a output
+dpkg-buildpackage --no-sign -b
 
 sudo apt install -y tree
 tree

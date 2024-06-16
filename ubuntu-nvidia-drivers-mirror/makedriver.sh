@@ -25,8 +25,11 @@ apt-get build-dep ./ -y
 # Build package
 dpkg-buildpackage --no-sign -b
 
-sudo apt install -y tree
-ls amd64/
+# Move the debs to output
+cd ../
+mkdir -p ./output
+mv ./*.deb ./output/
 
 popd
-exit 9
+
+

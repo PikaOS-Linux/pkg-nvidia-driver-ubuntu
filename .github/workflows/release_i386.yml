@@ -1,4 +1,4 @@
-name: PikaOS Package Release
+name: PikaOS Package Release (i386)
 
 on:
   workflow_dispatch
@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: self-hosted
     container:
-      image: ghcr.io/pikaos-linux/pika-package-container:latest
+      image: ghcr.io/pikaos-linux/pika-i386-package-container:latest
       volumes:
         - /proc:/proc
       options: --privileged -it
@@ -31,7 +31,7 @@ jobs:
         if_key_exists: replace
     
     - name: Build Package
-      run: chmod +x ./makedriver.sh && ./makedriver.sh amd64
+      run: chmod +x ./makedriver.sh && ./makedriver.sh i386
 
     - name: Release Package
       run: chmod +x ./release.sh && ./release.sh

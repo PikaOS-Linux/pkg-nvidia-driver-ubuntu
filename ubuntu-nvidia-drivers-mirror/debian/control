@@ -78,7 +78,7 @@ Description: NVIDIA kernel source package
  This package provides the NVIDIA kernel source needed by the userspace
  driver.
 
-Package: nvidia-pika-kernel-module-555 | nvidia-dkms-555
+Package: nvidia-dkms-555
 Architecture: amd64 arm64
 Multi-Arch: foreign
 Conflicts:

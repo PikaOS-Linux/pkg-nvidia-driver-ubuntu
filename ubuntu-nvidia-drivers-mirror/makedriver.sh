@@ -25,11 +25,6 @@ apt-get build-dep ./ -y
 # Build package
 dpkg-buildpackage --no-sign -b
 
-# Move the debs to output
-cd ../
-mkdir -p ./output
-mv ./*.deb ./output/
-
 popd
 
 

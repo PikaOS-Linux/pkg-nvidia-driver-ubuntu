@@ -31,7 +31,7 @@ jobs:
         if_key_exists: replace
     
     - name: Build Package
-      run: chmod +x ./ubuntu-nvidia-drivers-mirror/makedriver.sh && ./ubuntu-nvidia-drivers-mirror/makedriver.sh i386
+      run: chmod +x ./main.sh && ./main.sh i386
 
     - name: Release Package
       run: chmod +x ./release.sh && ./release.sh

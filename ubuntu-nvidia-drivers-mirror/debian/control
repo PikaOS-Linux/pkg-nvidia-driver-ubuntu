@@ -32,11 +32,7 @@ Package: nvidia-driver-555
 Architecture: amd64 arm64
 Depends:
  libnvidia-gl-555 (= ${binary:Version}),
- nvidia-dkms-555 (<= 555.52.04-1),
- nvidia-dkms-555 (>= 555.52.04),
  nvidia-dkms-555 (= ${binary:Version}),
- nvidia-kernel-common-555 (<= 555.52.04-1),
- nvidia-kernel-common-555 (>= 555.52.04),
  nvidia-kernel-common-555 (= ${binary:Version}),
  nvidia-kernel-source-555 (= ${binary:Version}),
  libnvidia-compute-555 (= ${binary:Version}),
@@ -94,11 +90,7 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms,
- nvidia-kernel-source-555 (<= 555.52.04-1),
- nvidia-kernel-source-555 (>= 555.52.04),
  nvidia-kernel-source-555 (= ${binary:Version}),
- nvidia-kernel-common-555 (<= 555.52.04-1),
- nvidia-kernel-common-555 (>= 555.52.04),
  nvidia-kernel-common-555 (= ${binary:Version}),
  nvidia-firmware-555-555.52.04,
  ${misc:Depends}, ${shlibs:Depends}

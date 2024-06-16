@@ -26,7 +26,9 @@ apt-get build-dep ./ -y
 dpkg-buildpackage --no-sign -b
 
 sudo apt install -y tree
-tree
-exit 9
+ls
 
 popd
+
+ls
+exit 9

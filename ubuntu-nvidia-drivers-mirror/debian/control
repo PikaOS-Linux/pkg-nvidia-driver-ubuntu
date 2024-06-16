@@ -378,8 +378,8 @@ Package: nvidia-driver-555-open
 Architecture: amd64 arm64
 Depends:
  libnvidia-gl-555 (= ${binary:Version}),
- nvidia-pika-kernel-module-555 | nvidia-dkms-555-open (<= ${binary:Version}),
- nvidia-pika-kernel-module-555 | nvidia-dkms-555-open (>= ${binary:Version}),
+ nvidia-pika-kernel-module-555-open | nvidia-dkms-555-open (<= ${binary:Version}),
+ nvidia-pika-kernel-module-555-open | nvidia-dkms-555-open (>= ${binary:Version}),
  nvidia-kernel-common-555 (<= ${binary:Version}),
  nvidia-kernel-common-555 (>= ${binary:Version}),
  nvidia-kernel-source-555-open (= ${binary:Version}),
@@ -426,7 +426,7 @@ Description: NVIDIA kernel source package
  This package provides the open NVIDIA kernel source needed by the userspace
  driver.
 
-Package: nvidia-pika-kernel-module-555 | nvidia-dkms-555-open
+Package: nvidia-dkms-555-open
 Architecture: amd64 arm64
 Multi-Arch: foreign
 Conflicts:
@@ -479,7 +479,7 @@ Provides: nvidia-headless
 Replaces: nvidia-headless
 Depends:
  nvidia-headless-no-dkms-555-open,
- nvidia-pika-kernel-module-555 | nvidia-dkms-555-open,
+ nvidia-pika-kernel-module-555-open | nvidia-dkms-555-open,
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA headless metapackage (open kernel module)
  This metapackage installs the NVIDIA driver and the libraries that enable

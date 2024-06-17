@@ -32,7 +32,7 @@ Package: nvidia-driver-#FLAVOUR#
 Architecture: amd64 arm64
 Depends:
  libnvidia-gl-#FLAVOUR# (= ${binary:Version}),
- nvidia-dkms-#FLAVOUR# (= ${binary:Version}),
+ nvidia-pika-kernel-module-#FLAVOUR# | nvidia-dkms-#FLAVOUR# (= ${binary:Version}),
  nvidia-kernel-common-#FLAVOUR# (= ${binary:Version}),
  nvidia-kernel-source-#FLAVOUR# (= ${binary:Version}),
  libnvidia-compute-#FLAVOUR# (= ${binary:Version}),
@@ -195,7 +195,7 @@ Provides: nvidia-headless
 Replaces: nvidia-headless
 Depends:
  nvidia-headless-no-dkms-#FLAVOUR#,
- nvidia-dkms-#FLAVOUR#,
+ nvidia-pika-kernel-module-#FLAVOUR# | nvidia-dkms-#FLAVOUR#,
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA headless metapackage
  This metapackage installs the NVIDIA driver and the libraries that enable
@@ -212,7 +212,7 @@ Provides: nvidia-kernel-common
 Depends:
  ${misc:Depends}, ${shlibs:Depends}, nvidia-firmware-#FLAVOUR#-#VERSION#
 Replaces:
- nvidia-dkms-#FLAVOUR# (<< 390.48-0ubuntu3~), nvidia-kernel-common
+ nvidia-pika-kernel-module-#FLAVOUR# | nvidia-dkms-#FLAVOUR# (<< 390.48-0ubuntu3~), nvidia-kernel-common
 Description: Shared files used with the kernel module
  This package installs all the optional accessory files for the NVIDIA
  kernel module.
@@ -377,7 +377,7 @@ Package: nvidia-driver-#FLAVOUR#-open
 Architecture: amd64 arm64
 Depends:
  libnvidia-gl-#FLAVOUR# (= ${binary:Version}),
- nvidia-dkms-#FLAVOUR#-open (= ${binary:Version}),
+ nvidia-pika-kernel-module-#FLAVOUR#-open | nvidia-dkms-#FLAVOUR#-open (= ${binary:Version}),
  nvidia-kernel-common-#FLAVOUR# (= ${binary:Version}),
  nvidia-kernel-source-#FLAVOUR#-open (= ${binary:Version}),
  libnvidia-compute-#FLAVOUR# (= ${binary:Version}),
@@ -473,7 +473,7 @@ Provides: nvidia-headless
 Replaces: nvidia-headless
 Depends:
  nvidia-headless-no-dkms-#FLAVOUR#-open,
- nvidia-dkms-#FLAVOUR#-open,
+ nvidia-pika-kernel-module-#FLAVOUR#-open | nvidia-dkms-#FLAVOUR#-open,
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA headless metapackage (open kernel module)
  This metapackage installs the NVIDIA driver and the libraries that enable

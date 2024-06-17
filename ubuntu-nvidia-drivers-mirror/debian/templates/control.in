@@ -212,7 +212,7 @@ Provides: nvidia-kernel-common
 Depends:
  ${misc:Depends}, ${shlibs:Depends}, nvidia-firmware-#FLAVOUR#-#VERSION#
 Replaces:
- nvidia-pika-kernel-module-#FLAVOUR# | nvidia-dkms-#FLAVOUR# (<< 390.48-0ubuntu3~), nvidia-kernel-common
+ nvidia-pika-kernel-module-#FLAVOUR# (<< 390.48-0ubuntu3~), nvidia-dkms-#FLAVOUR# (<< 390.48-0ubuntu3~), nvidia-kernel-common
 Description: Shared files used with the kernel module
  This package installs all the optional accessory files for the NVIDIA
  kernel module.
@@ -473,7 +473,8 @@ Provides: nvidia-headless
 Replaces: nvidia-headless
 Depends:
  nvidia-headless-no-dkms-#FLAVOUR#-open,
- nvidia-pika-kernel-module-#FLAVOUR#-open | nvidia-dkms-#FLAVOUR#-open,
+ nvidia-pika-kernel-module-#FLAVOUR#-open,
+ nvidia-dkms-#FLAVOUR#-open,
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA headless metapackage (open kernel module)
  This metapackage installs the NVIDIA driver and the libraries that enable

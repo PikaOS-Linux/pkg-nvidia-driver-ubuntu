@@ -173,8 +173,7 @@ Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides: nvidia-384
 Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
- nvidia-kernel-common-555 (<= ${binary:Version}),
- nvidia-kernel-common-555 (>= ${binary:Version}),
+ nvidia-kernel-common-555 (= ${binary:Version}),
  nvidia-kernel-source-555 (= ${binary:Version}),
  libnvidia-compute-555 (= ${binary:Version}),
  nvidia-compute-utils-555 (= ${binary:Version}),
@@ -378,10 +377,8 @@ Package: nvidia-driver-555-open
 Architecture: amd64 arm64
 Depends:
  libnvidia-gl-555 (= ${binary:Version}),
- nvidia-pika-kernel-module-555-open | nvidia-dkms-555-open (<= ${binary:Version}),
- nvidia-pika-kernel-module-555-open | nvidia-dkms-555-open (>= ${binary:Version}),
- nvidia-kernel-common-555 (<= ${binary:Version}),
- nvidia-kernel-common-555 (>= ${binary:Version}),
+ nvidia-pika-kernel-module-555-open | nvidia-dkms-555-open (= ${binary:Version}),
+ nvidia-kernel-common-555 (= ${binary:Version}),
  nvidia-kernel-source-555-open (= ${binary:Version}),
  libnvidia-compute-555 (= ${binary:Version}),
  libnvidia-extra-555 (= ${binary:Version}),
@@ -438,10 +435,8 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms,
- nvidia-kernel-source-555-open (<= ${binary:Version}),
- nvidia-kernel-source-555-open (>= ${binary:Version}),
- nvidia-kernel-common-555 (<= ${binary:Version}),
- nvidia-kernel-common-555 (>= ${binary:Version}),
+ nvidia-kernel-source-555-open (= ${binary:Version}),
+ nvidia-kernel-common-555 (= ${binary:Version}),
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package (open kernel module)
  This package builds the open NVIDIA kernel module needed by the userspace
@@ -456,8 +451,7 @@ Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides: nvidia-384
 Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
- nvidia-kernel-common-555 (<= ${binary:Version}),
- nvidia-kernel-common-555 (>= ${binary:Version}),
+ nvidia-kernel-common-555 (= ${binary:Version}),
  nvidia-kernel-source-555-open (= ${binary:Version}),
  libnvidia-compute-555 (= ${binary:Version}),
  nvidia-compute-utils-555 (= ${binary:Version}),

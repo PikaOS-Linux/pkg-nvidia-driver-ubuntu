@@ -5,7 +5,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 pushd "${SCRIPT_DIR}"
 
 DRIVER_VERSION_MAJOR="555"
-DRIVER_VERSION_FULL="555.52.04"
+DRIVER_VERSION_FULL="555.58"
 DRIVER_ARCH="Linux-x86_64"
 DEBIAN_ARCH="$1"
 DEBIAN_FRONTEND=noninteractive

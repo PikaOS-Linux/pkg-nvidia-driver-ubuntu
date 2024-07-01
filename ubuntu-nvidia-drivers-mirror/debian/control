@@ -92,7 +92,7 @@ Depends:
  dkms,
  nvidia-kernel-source-555 (= ${binary:Version}),
  nvidia-kernel-common-555 (= ${binary:Version}),
- nvidia-firmware-555-555.52.04,
+ nvidia-firmware-555-555.58,
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package
  This package builds the NVIDIA kernel module needed by the userspace
@@ -210,7 +210,7 @@ Architecture: amd64 arm64
 Conflicts: nvidia-kernel-common
 Provides: nvidia-kernel-common
 Depends:
- ${misc:Depends}, ${shlibs:Depends}, nvidia-firmware-555-555.52.04
+ ${misc:Depends}, ${shlibs:Depends}, nvidia-firmware-555-555.58
 Replaces:
  nvidia-pika-kernel-module-555 (<< 390.48-0ubuntu3~), nvidia-dkms-555 (<< 390.48-0ubuntu3~), nvidia-kernel-common
 Description: Shared files used with the kernel module
@@ -221,7 +221,7 @@ Description: Shared files used with the kernel module
  modules, and if you want udev to load the the NVIDIA kernel modules,
  and to create the uvm devices automatically.
 
-Package: nvidia-firmware-555-555.52.04
+Package: nvidia-firmware-555-555.58
 Architecture: amd64 arm64
 Breaks:
  nvidia-firmware-555-server-${binary:Version}
